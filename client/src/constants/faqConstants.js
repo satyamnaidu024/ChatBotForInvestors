@@ -1,0 +1,5 @@
+export const ALL_FAQS_REQUEST = 'ALL_FAQS_REQUEST'
+export const ALL_FAQS_SUCCESS = 'ALL_FAQS_SUCCESS'
+export const ALL_FAQS_FAIL = 'ALL_FAQS_FAIL'
+
+export const CLEAR_ERRORS = 'CLEAR_ERRORS'

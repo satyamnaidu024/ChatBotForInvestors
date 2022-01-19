@@ -1,0 +1,42 @@
+{
+  "name": "groww-t7",
+  "version": "1.0.0",
+  "description": "Website with chatbot for investors",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "backend": "nodemon app.js",
+    "frontend": "npm run start --prefix client",
+    "together": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "seeder": "node utils/seeder.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Crio-Winter-of-Doing-2021/GROWW-T7.git"
+  },
+  "author": "Satyam Naidu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Crio-Winter-of-Doing-2021/GROWW-T7/issues"
+  },
+  "homepage": "https://github.com/Crio-Winter-of-Doing-2021/GROWW-T7#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "dialogflow": "^1.2.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.2.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.12.2",
+    "nodemailer": "^6.5.0",
+    "validator": "^13.5.2"
+  },
+  "devDependencies": {
+    "concurrently": "^6.0.0",
+    "nodemon": "^2.0.7"
+  }
+}
